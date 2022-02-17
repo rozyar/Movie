@@ -16,7 +16,7 @@ export function Main(props) {
 
 //o getMovieRequest pega o nosso SearchValue e pede para a api e nos pegamos a respota convertemos para json e se nos tivemos algum resultado de pesquisa nos ficaremos coma função if 
 	const getMovieRequest = async (searchValue) => {
-		const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=d3f77329`;
+		const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=d3f77329`;
 		
 		//quando o fetch acontecer ele vai guardar no var response, e responder um objeto que criamos com a busca
 		const response = await fetch(url);
