@@ -73,31 +73,39 @@ export function Main(props) {
 	//criamos a classe movie-app pois os filmes não continuavam na mesma linha e quando diminuiamos a pagina ele ia pra baixo 
 	//Oque temos que fazer com o valor dentro da serch é, guardar ele dentro do searchValue State e toda vez que isso mudar nós iremos chamar o getmovierequest, a primeira coisa que temos que fazer é passar o searchValue e o SetSearchValue para nossa searchBox e puxar ele para a area do input
 	return (
-		<div className='container-fluid movie-app'>
-			<div className='row d-flex align-items-center mt-4 mb-4'>
-				<MovieListHeading heading='Movies' />
-				<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
+		<div>
+			<div className="hero-image">
+				<div className="hero-text">
+					<h1>THE MOVIE BIBLE</h1>
+					<p>Deixe seu comentário</p>
+				</div>
 			</div>
-			<div className='row'>
-				<MovieList
-					movies={movies}
-					handleFavouritesClick={addFavouriteMovie}
-					favouriteComponent={AddFavourites}
-                    setPoster={props.setPoster}
-                    setId={props.setId}
-				/>
-			</div>
-			<div className='row d-flex align-items-center mt-4 mb-4'>
-				<MovieListHeading heading='Favorites' />
-			</div>
-			<div className='row'>
-				<MovieList
-					movies={favourites}
-					handleFavouritesClick={removeFavouriteMovie}
-					favouriteComponent={RemoveFavourites}
-                    setPoster={props.setPoster}
-                    setId={props.setId}
-				/>
+			<div className='container-fluid movie-app bg'>
+				<div className='row d-flex align-items-center mt-4 mb-4 text'>
+					<MovieListHeading heading='Movies' />
+					<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
+				</div>
+				<div className='row'>
+					<MovieList
+						movies={movies}
+						handleFavouritesClick={addFavouriteMovie}
+						favouriteComponent={AddFavourites}
+						setPoster={props.setPoster}
+						setId={props.setId}
+					/>
+				</div>
+				<div className='row d-flex align-items-center mt-4 mb-4 text'>
+					<MovieListHeading heading='Favorites' />
+				</div>
+				<div className='row'>
+					<MovieList
+						movies={favourites}
+						handleFavouritesClick={removeFavouriteMovie}
+						favouriteComponent={RemoveFavourites}
+						setPoster={props.setPoster}
+						setId={props.setId}
+					/>
+				</div>
 			</div>
 		</div>
 	);

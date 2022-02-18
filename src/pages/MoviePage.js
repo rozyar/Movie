@@ -85,7 +85,7 @@ export function MoviePage(props){
 	}, []); 
     
     return(
-        <>
+        <div className="bg">
         <div className="return">
 
         <Link to="../"> <div className="arrow"></div></Link>
@@ -102,12 +102,12 @@ export function MoviePage(props){
         
         <div className="comentCreation">
             <div className="comentBox">
-            <form>    
-                <input id="user" value={user} onChange={handleChange2} name="comment" placeholder="Nome de Usuário"/>
-                <br/>
-                <textarea id="comment" cols="20" rows="5" value={comment} onChange={handleChange} name="comment" placeholder="Inserir Comentário"/>
-                <button type="submit" onClick={handleSubmit}>Enviar</button>
-            </form>
+                <form>    
+                    <input id="user" value={user} onChange={handleChange2} name="comment" placeholder="Nome de Usuário"/>
+                    <br/>
+                    <textarea id="comment" cols="20" rows="5" value={comment} onChange={handleChange} name="comment" placeholder="Inserir Comentário"/>
+                    <button type="submit" onClick={handleSubmit}>Enviar</button>
+                </form>
             </div>
         </div>
             {   
@@ -119,6 +119,6 @@ export function MoviePage(props){
                 )
             }
 
-        </>
+        </div>
     )
 }

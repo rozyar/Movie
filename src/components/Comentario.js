@@ -25,8 +25,8 @@ export function Comentario(props){
        <h1>{props.userName}</h1> 
        <hr/>
        <p>{props.comentario}</p>
-      <button className="botao"type="button" onClick={handleDelete}>DELETAR POST</button>
-      <Link to={props.id} ><button className="botao" type="button" >EDITAR POST</button></Link>
+      <button className="botao" type="button" onClick={handleDelete}>Deletar</button>
+      <Link to={props.id} ><button className="botao" type="button" >Editar</button></Link>
       </div>
       </div>
   )

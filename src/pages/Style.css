@@ -44,6 +44,7 @@
 
 .container-text { 
     display: inline;
+    color: rgb(252, 209, 174);
 }
 
 .Titulo{
@@ -77,12 +78,12 @@
 
 .comentBox{
     display:flex;
-    background-color: rgb(29, 28, 28);
+    border: 1px solid rgb(121, 121, 121);
+    border-radius: 5px;
     width: 500px;
     justify-content: center;
     max-height: 370px;
-    border-radius: 20px;
-    border: solid black 1px;
+    
 }
 
 
@@ -121,14 +122,15 @@
 
 .comentBox Button{
     border: 0;
-    padding: 10px 30px;
+    padding: 2px 15px;
     background-color:#86b0b6;
-    margin-left:48px;
-    font-size:18px;
-    border-radius: 5px;
+    font-size:12px;
+    margin-left: 25px;
+    margin-bottom: 8px;
+    border-radius: 10px;
     color: black;
-    margin-bottom: 20px;
-
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 48px;
 }
 
 .label{
